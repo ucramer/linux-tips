@@ -10,11 +10,12 @@ Listening ports are open ports where a service is listening on to accept a conne
 Or prevent duplications. Especially if you run Docker and have multiple containers providing web services. 
 For Debian, I normally use `ss` as follows:
 ```console
-root@vm:~# ss -tulpn | grep LISTEN
+user@vm:~ $ sudo ss -tulpn | grep LISTEN
+[sudo] password for user:
 tcp   LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=1109,fd=6))
 tcp   LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=1109,fd=7))
 ```
-In teh above output, the SSH Daemon (sshd) is listening on all connections (IPv4: 0.0.0.0 / IPv6 [::]) on port 22. It also shows the Processor ID (pid=1109).
+In the above output, the SSH Daemon (sshd) is listening on all connections (IPv4: 0.0.0.0 / IPv6 [::]) on port 22. It also shows the Processor ID (pid=1109).
 
 ## 2. Chaning IP Addresses:
 *(to be completed)*
