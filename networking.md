@@ -17,8 +17,15 @@ tcp   LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",
 ```
 In the above output, the SSH Daemon (sshd) is listening on all connections (IPv4: 0.0.0.0 / IPv6 [::]) on port 22. It also shows the Processor ID (pid=1109).
 
-## 2. Chaning IP Addresses:
-*(to be completed)*
+## 2. Changing IP Addresses:
+Ubuntu uses netplan for the network configuration. Debian uses either netplan as well or you can use the old interfaces file. Netplan is easier and more efficient. I am focusing on netplan here. 
+
+Netplan uses a yaml file in the `/etc/netplan/` directory. The naming convention is important on the files. Each file should start with a number in a double digit format. For example `01-*.yaml` or `99-*.yaml`. 
+If multiple yaml files are available, they are applied based on the number in a sequence from lowest to highest. 
+
+
+
+
 
 ## 3. Displaying the IP on the CLI Login Screen
 Modern hypervisors have tools (VMware Tools for VMware, virtuo for KVM-based hypervisors) that can extract that information and display it in the VM information. 
