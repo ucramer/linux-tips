@@ -1,11 +1,15 @@
 # linux-tips
 Some Linux tips to remember. Mostly tested/used on Debian or Ubuntu, but might be cross-platform
 
+## Disclaimer:
+These commands impact the availability of the system. Although I am trying to ensure that everything works, there could be changes/differences in systems that impact how the command is implemented. 
+Using these commands are at the users own risk and care should be taken.
+
 # Topics
 ## [Networking](networking.md)
   1. Listening Ports
-  2. Networking
-  3. Display IP before login
+  2. Changing IP Addresses
+  3. Display the IP on login screen (CLI)
   4. *TBC*
 
 ## *To be extended*
