@@ -12,4 +12,10 @@ Using these commands are at the users own risk and care should be taken.
   3. Display the IP on login screen (CLI)
   4. *TBC*
 
+## [Random Commands](random.md)
+Here are some other random comands:
+
+  1. SCP - secure copy protocol via SSH
+  2.  *TPC*
+
 ## *To be extended*
